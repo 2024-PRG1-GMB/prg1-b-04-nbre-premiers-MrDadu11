@@ -24,8 +24,8 @@ int main() {
 
 
         cout << "Voici la liste des nombres premiers" << endl;
-            for (int i = 1; i < limite; i++) {
-                for (int j = 1; j*j<=i; j++) {
+            for (int i = 2; i < limite; i++) {
+                for (int j = 2; j*j<=i; j++) {
                     if(i % j == 0) {
                         break;
                     }else if (j+1 > sqrt(i)) {
